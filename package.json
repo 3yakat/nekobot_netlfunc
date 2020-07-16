@@ -17,7 +17,6 @@
     "express": "^4.17.1",
     "gyazo-api": "^0.3.1",
     "netlify-lambda": "^2.0.0",
-    "serverless-http": "^2.5.0",
-    "dev": "netlify-lambda serve resources/api --config ./webpack.functions.js"
+    "serverless-http": "^2.5.0"
   }
 }
