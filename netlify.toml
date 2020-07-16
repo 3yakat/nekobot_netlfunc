@@ -1,0 +1,3 @@
+[build]
+  functions = "dist/api"
+  command = "npm install && npm run build"
