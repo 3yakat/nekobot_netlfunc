@@ -2,6 +2,7 @@
 const express = require('express');
 const line = require('@line/bot-sdk');
 const PORT = process.env.PORT || 3000;
+const serverless = require('serverless-http'); //追加
 const Gyazo = require('gyazo-api');
 const gyazoclient = new Gyazo('77da4f4d21966ad1ab497efb11406122094bbf245292d7a886cd1f60e13786a6');
 require('dotenv').config({ debug: true });
@@ -11,6 +12,7 @@ const config = {
 };
 
 const app = express();
+const router = express.Router();
 app.get('/', (req, res) => res.send('Hello LINE BOT!(GET)')); 
 app.post('/webhook', line.middleware(config), (req, res) => {
   console.log(req.body.events);
