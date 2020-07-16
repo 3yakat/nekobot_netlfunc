@@ -73,6 +73,8 @@ async function handleEvent(event) {
 
 // app.listen(process.env.PORT || 8080);
 // console.log(`Server running at ${PORT}`);
+
+
 app.use('/.netlify/functions/main', router); //ルーティング追加
 module.exports = app; //追加
 module.exports.handler = serverless(app); //追加
