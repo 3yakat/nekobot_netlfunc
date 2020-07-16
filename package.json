@@ -13,9 +13,11 @@
   "dependencies": {
     "@line/bot-sdk": "^7.0.0",
     "dotenv": "^8.2.0",
+    "dotenv-webpack": "^2.0.0",
     "express": "^4.17.1",
     "gyazo-api": "^0.3.1",
     "netlify-lambda": "^2.0.0",
-    "serverless-http": "^2.5.0"
+    "serverless-http": "^2.5.0",
+    "dev": "netlify-lambda serve resources/api --config ./webpack.functions.js"
   }
 }
